@@ -1,4 +1,4 @@
-# Number Parser & Stack (C Project)
+# Postfix Expression Calculator
 
 ## 📌 Overview
 
