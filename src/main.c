@@ -3,13 +3,21 @@
 #include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 #define MAX_LENGTH 50
 
 int exe_postfix(char str[MAX_LENGTH]);
 
 int main(void) {
-  char str[MAX_LENGTH] = "13 2 4 * +";
+  char str[MAX_LENGTH];
+
+  printf("Enter Postfix Expression: ");
+
+  fgets(str, sizeof(str), stdin);
+  if (strlen(str) > 0)
+    str[strlen(str) - 1] = '\0';
+
   int result = exe_postfix(str);
   printf("result: %d\n", result);
   return 0;
