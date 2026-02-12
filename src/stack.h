@@ -30,4 +30,6 @@ int peek(Stack *stack);
 
 void push(Stack *stack, int number);
 
+void free_stack(Stack *stac);
+
 #endif

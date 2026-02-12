@@ -45,3 +45,5 @@ int peek(Stack *stack) {
 
   return stack->content[stack->top];
 }
+
+void free_stack(Stack *stack) { initialize_stack(stack); }

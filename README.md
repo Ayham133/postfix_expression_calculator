@@ -16,11 +16,17 @@ header/source separation, and dynamic memory management.
 ## 🗂 Project Structure
 
     .
-    ├── main.c
-    ├── stack.c
-    ├── stack.h
-    ├── number_parser.c
-    ├── number_parser.h
+    ├── bin/
+    |   |_out
+    |
+    ├── src/
+    |   |
+    |   |- main.c
+    |   |- number_parser.c
+    |   |- number_parser.h
+    |   |- stack.c
+    |   |_ stack.h
+    |
     └── README.md
 
 ### File Descriptions
@@ -41,14 +47,14 @@ header/source separation, and dynamic memory management.
 #### `stack.c`
 
 -   Implementation of the stack
--   Typical operations may include:
+-   stack.c includes implementation for:
     -   `push`
     -   `pop`
     -   `peek`
-    -   `isEmpty`
-    -   `isFull`
-    -   `createStack`
-    -   `freeStack`
+    -   `is_empty`
+    -   `is_full`
+    -   `initialize_stack`
+    -   `free_stack`
 
 #### `number_parser.h`
 
@@ -69,7 +75,7 @@ header/source separation, and dynamic memory management.
 Compile all source files together:
 
 ``` bash
-gcc main.c stack.c number_parser.c -o bin/out -lm
+gcc src/main.c src/stack.c src/number_parser.c -o bin/out -lm
 ```
 
 ------------------------------------------------------------------------
